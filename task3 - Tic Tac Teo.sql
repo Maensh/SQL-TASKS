@@ -27,6 +27,7 @@ sel1 as (select sel.num as a, sel.num as b , sel.num as c , sel.num as d from se
 select sel1.a as Y, sel1.b as "1", sel1.c as "2", sel1.d as "3" from sel1;
 
 ------------------------------------------------------------------------------
+-- Solution without Pivot Functoin
 create table try_pivot as
 WITH ap as (select level as num from dual connect by level<=3)
 , 
